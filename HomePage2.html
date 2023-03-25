@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang=":en">
 <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <title>Home Page</title>
 
 <style>
@@ -9,7 +13,7 @@
     padding:0;
     background:url(volcano.png);
     background-size:cover;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     height: 100vh;
     }
    nav{
@@ -48,6 +52,11 @@ nav a{
     color:#f2f2f2;
     text-align:center;
 }
+  nav{
+    color:#fff;
+    font=size: 1.5rem;
+    cursorx: pointer;
+}
 nav a:hover {
     background:black;
     transition:0.5s;
@@ -64,18 +73,25 @@ h1 {
     font-weight: bold;
     font-family: Arial;
     color:#fff;
-
   }
 
+/* RESPONSIVE DESIGN */
+@media(max-width: 992px){
+    .navbar-links,
+    .navbar .action_btn{
+        display: block;
+    }
+}
 
 </style>    
 </head>
 <body>
+    <header>
 <div class="container">
     <a class="navbar-brand" href"#">
         <img class="logo" src="taal.png"width="120" height="90">
         </a>
-       </div>
+       <div>
     <nav>
         <ul>
             <li><a href="#">Home</a></li>
@@ -84,9 +100,13 @@ h1 {
             <li><a href="#">During</a></li>
             <li><a href="#">After</a></li>
             <li><a href="#">About</a></li>
+            <div class="navbar"></div>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
         </ul>
     </nav>
     <h1>Volcanic Hazards</h1>
-
+    </div>
+</header>
 </body>
 </html>
